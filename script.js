@@ -3,9 +3,15 @@
 function openWebsite() {
     document.getElementById("opening").style.display = "none";
     document.getElementById("mainContent").classList.remove("hidden");
+
+    music.play().then(() => {
+        musicButton.textContent = "♫ Pause Music";
+    }).catch(() => {
+        musicButton.textContent = "♫ Play Music";
+    });
+
     launchConfetti();
 }
-
 // MUSIC PLAYER
 const music = document.getElementById("birthdayMusic");
 const musicButton = document.getElementById("musicButton");
