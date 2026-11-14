@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Sweet Sixteen, Sarini!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="opening" id="opening">
+        <div class="opening-content">
+            <span class="tiny-heart">♡</span>
+            <p class="small-text">A LITTLE SURPRISE FOR YOU</p>
+            <h1>Happy Birthday,<br><span>Sarini!</span></h1>
+            <p class="opening-subtitle">Someone as special as you deserves something special.</p>
+            <button class="main-button" onclick="openWebsite()">Open Your Surprise ♡</button>
+        </div>
+    </div>
+
+    <nav>
+        <div class="logo">for sarini ♡</div>
+        <button class="music-button" onclick="toggleMusic()" id="musicButton">♫ Play Music</button>
+    </nav>
+
+    <main id="mainContent" class="hidden">
+
+        <section class="hero">
+            <div class="hero-decoration">♡</div>
+            <p class="eyebrow">A SPECIAL DAY FOR SOMEONE SPECIAL</p>
+            <h1>Happy <span>Sweet</span><br>Sixteen!</h1>
+            <p class="hero-name">Dear Sarini, this little website is made just for you.</p>
+            <div class="hero-date">29 · 11 · 2026</div>
+            <a href="#countdown" class="scroll-button">Scroll to see your surprise ↓</a>
+        </section>
+
+        <section class="countdown-section" id="countdown">
+            <p class="eyebrow">THE COUNTDOWN</p>
+            <h2>Until your special day</h2>
+            <div class="countdown">
+                <div class="time-box"><span id="days">00</span><small>Days</small></div>
+                <div class="time-box"><span id="hours">00</span><small>Hours</small></div>
+                <div class="time-box"><span id="minutes">00</span><small>Minutes</small></div>
+                <div class="time-box"><span id="seconds">00</span><small>Seconds</small></div>
+            </div>
+        </section>
+
+        <section class="cake-section">
+            <p class="eyebrow">MAKE A WISH</p>
+            <h2>A little birthday cake for you</h2>
+            <p class="section-description">Close your eyes, make a wish, and blow the candle! ♡</p>
+
+            <div class="cake">
+                <div class="flame" id="flame"></div>
+                <div class="candle"></div>
+                <div class="cake-top"></div>
+                <div class="cake-body">
+                    <span>16</span>
+                </div>
+                <div class="cake-plate"></div>
+            </div>
+
+            <button class="main-button" onclick="blowCandle()">Blow the Candle ♡</button>
+            <p id="wishText" class="wish-text"></p>
+        </section>
+
+        <section class="gallery-section">
+            <p class="eyebrow">LITTLE PIECES OF MEMORIES</p>
+            <h2>Our Favorite Moments</h2>
+            <p class="section-description">A few pictures to remember the beautiful moments.</p>
+
+            <div class="gallery">
+                  <img src="images/foto1.jpg" alt="Memory 1">
+                  <img src="images/foto2.jpg" alt="Memory 2">
+                  <img src="images/foto3.jpg" alt="Memory 3">
+                  <img src="images/foto4.jpg" alt="Memory 4">
+            </div>
+        </section>
+
+        <section class="message-section">
+            <div class="message-card">
+                <span class="message-heart">♡</span>
+                <p class="eyebrow">A LETTER FOR YOU</p>
+                <h2>Something I Want You To Know</h2>
+                <p>There are things that are easier to write than to say.</p>
+                <button class="main-button" onclick="openLetter()">Read Your Special Message ♡</button>
+            </div>
+        </section>
+
+        <section class="closing">
+            <p class="eyebrow">ONCE AGAIN</p>
+            <h2>Happy Sweet Sixteen,<br><span>Sarini!</span></h2>
+            <p>May your new chapter be filled with love, laughter, and beautiful memories.</p>
+            <div class="closing-heart">♡</div>
+            <small>Made with love, just for you.</small>
+        </section>
+
+    </main>
+
+    <div class="modal" id="letterModal">
+        <div class="modal-content letter-content">
+            <button class="close-button" onclick="closeLetter()">×</button>
+            <p class="eyebrow">A LETTER FROM MY HEART</p>
+            <h2>Untuk Sarini ♡</h2>
+
+            <div class="letter-text">
+                <p>Selamat ulang tahun yang ke-16, Sarini!</p>
+
+                <p>Sebelumnya, aku mau bilang terima kasih. Terima kasih karena sudah hadir dan menjadi salah satu bagian berharga dalam hidupku. Terima kasih sudah mau menjadi sahabat terbaikku, sudah berbagi banyak cerita, tawa, dan hal-hal sederhana yang ternyata punya arti begitu besar.</p>
+
+                <p>Aku mungkin nggak selalu bisa mengungkapkan betapa bersyukurnya aku punya sahabat seperti kamu. Tapi, aku harap kamu tahu kalau kehadiranmu berarti. Aku senang bisa mengenal kamu, bisa melewati banyak cerita bersama, dan punya kenangan yang suatu hari nanti mungkin akan kita rindukan.</p>
+
+                <p>Di umur yang baru ini, aku berdoa semoga semua hal baik selalu menemukan jalannya menuju kamu. Semoga kamu selalu diberi kesehatan, kebahagiaan, kemudahan dalam setiap urusan, dan kekuatan untuk melewati hari-hari yang nggak selalu mudah.</p>
+
+                <p>Jangan terlalu keras sama diri sendiri, ya. Kamu nggak harus selalu sempurna untuk menjadi seseorang yang berharga. Tetaplah jadi Sarini yang aku kenal dan pantas mendapatkan hal-hal baik.</p>
+
+                <p>Semoga di usia 16 tahun ini ada lebih banyak alasan untuk tersenyum, lebih banyak mimpi yang tercapai, dan lebih banyak kenangan indah yang bisa kita buat bersama.</p>
+
+                <p>Terima kasih sudah menjadi sahabat terbaikku. Semoga persahabatan kita tetap punya banyak cerita untuk diceritakan di tahun-tahun berikutnya.</p>
+
+                <p class="letter-ending">Once again, happy sweet sixteen, Sarini! ♡</p>
+                <p>With lots of love and best wishes.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="photo-modal" id="photoModal" onclick="closePhoto()">
+        <button class="close-button">×</button>
+        <img id="expandedPhoto" src="" alt="Expanded memory">
+    </div>
+
+    <audio id="birthdayMusic" loop>
+        <source src="music/birthday.mp3" type="audio/mpeg">
+    </audio>
+
+    <canvas id="confetti"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
